@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Mensaje  from './Mensaje.js' 
+
+function Descripcion() {  
+return <>Esto es una practica del bootcamp de react</>
+}
 
 function App() {
+  let a = 5
+  let b = 10 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Titulo de la App</h1> 
+      <strong>Estoy trabajando en ello</strong>
+      <div>
+        <p> el resultado de la operacion</p>
+      {a+b}  
+      </div> 
+      <Mensaje color = 'red' message = 'esto es un curso'/> 
+      <Mensaje color = 'Blue' message = 'con React.js'/> 
+       <br />
+      <Descripcion/>
     </div>
   );
 }
